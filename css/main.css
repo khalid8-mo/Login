@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+/*======================Start Header===================================================*/
+.header{
+    background-color: #eee;
+}
+.header .logo{
+    float: right;
+
+}
+.header .logo h1{
+    display: inline;
+}
+.header .logo img{
+    width: 50px;
+}
+.header .media img{
+    width: 50px;
+}
+
+.navbar-inverse{
+    background-color: #000;
+    margin: 0;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus{
+    background:#ff0055
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background: #ff0055
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #bbb;
+    font-size: 20px;
+    padding-left: 30px
+}
+.navbar-header img{
+    width: 32px;
+    margin: 8px -9px
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background: #ff0055;
+    color: #fff;
+    padding: 7px 30px;
+    -webkit-transition: padding 0.6s ease;
+    -moz-transition: padding 0.6s ease;
+    -o-transition: padding 0.6s ease;
+    transition: padding 0.6s ease
+}
+.navbar-inverse .navbar-brand {
+    color: #bbb;
+    font-size:24px
+}
+.navbar-inverse .navbar-brand span{
+    color:#004aff;
+    margin-left:20px
+}
+.dropdown-menu{
+    min-width:200px;
+    padding:0
+}
+.dropdown-menu > li > a {
+    background: #333;
+    color: #fff;
+    padding:7px 20px
+}
+    .dropdown-menu .divider {
+        margin: 0;
+        background: #600c0c;
+    }
+
+/*======================End Header===================================================*/
+
+
+/*======================Start jumbotron===================================================*/
+.jumbotron{
+    color: #fff;
+}
+.jumbotron img{
+  margin-top: 30px;
+}
+.jumbotron h1{
+    color: #595859;
+}
+.input-group{
+    margin-bottom: 30px;
+}
+.input-group-btn:last-child > 
+.btn, .input-group-btn:last-child >
+ .btn-group{
+     background-color: #008bff;
+     color: #fff;
+ }
+
+/*======================End jumbotron===================================================*/
+
+.openBtn {
+    background: #ff0055;
+    border: none;
+    padding: 6px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .openBtn:hover {
+    background: #004aff;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  .overlay input[type=text]:hover {
+    background: #f1f1f1;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #004aff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .overlay button:hover {
+    background: #ff0055;
+  }
+
+  /*================Start Forms===================================================================*/
+  .open-button {
+    background-color: #ff0055;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+/*===================End Forms======================================================================*/
+  
+/*===========================Start sgin up=================*/
+
+.jumbotron a{
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+.jumbotron .login{
+  background-color: #ff0055;
+  color: #fff;
+  padding: 8px 44px;
+  text-decoration: none;
+  margin-right:10px ;
+}
+.jumbotron a:hover{
+  background-color: #004aff;
+}
+.jumbotron .login:hover{
+  background-color: #4CAF50;
+}
+ /*=========================End sgin up=======================*/
+
+
+
+
+/*======================Start footer===================================================*/
+.footer{
+  background-color:#380a4f ;
+  direction: rtl;
+  text-align: center;
+  color: #fff;
+}
+.footer .media img{
+  width: 50px;
+}
+/*======================End footer===================================================*/
